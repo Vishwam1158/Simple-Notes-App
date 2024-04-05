@@ -11,7 +11,8 @@ import androidx.compose.ui.Modifier
 fun HomeView() {
 
     Scaffold(
-        topBar = { AppBarView(title = "Notes") }
+        topBar = { AppBarView(title = "Notes") },
+        bottomBar = {}
     ) {
         LazyColumn(modifier = Modifier.padding(it)) {
 
