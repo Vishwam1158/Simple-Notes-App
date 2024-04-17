@@ -47,7 +47,7 @@ fun  AppBarView(
                 color = colorResource(id = R.color.white),
                 modifier = Modifier
                     .padding(start = 4.dp)
-                    .heightIn(max = 24.dp) // Content's max height is 24 dp
+                    .heightIn(max = 24.dp) // Content's maximum height is 24 dp
             )
         },
         elevation = 3.dp,
