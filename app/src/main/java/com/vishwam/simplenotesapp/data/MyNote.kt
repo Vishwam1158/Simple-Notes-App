@@ -1,9 +1,18 @@
 package com.vishwam.simplenotesapp.data
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 // This class for only single note but note
+
+@Entity(tableName = "note-table")
 data class MyNote(
+    @PrimaryKey(autoGenerate = true)
     val id: Long = 0L,
+    @ColumnInfo(name = "note-title")
     val title: String = "",
+    @ColumnInfo(name = "not-des")
     val description: String = ""
 )
 
